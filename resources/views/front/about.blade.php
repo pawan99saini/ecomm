@@ -27,11 +27,11 @@
        
       <ul class="nav nav-tabs my-account-tab" role="tablist">
         <li role="presentation" class="active">
-          <a href="#about1" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-handshake-o" aria-hidden="true"></i>  About Us 1 </a>
+          <a href="#about1" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-handshake-o" aria-hidden="true"></i>  About Us 1 vaibhav </a>
         </li>
         <li role="presentation"><a href="#about2" aria-controls="about2" role="tab" data-toggle="tab">
          <i class="fa fa-handshake-o" aria-hidden="true"></i>  About Us 2</a></a></li>
-        <li role="presentation"><a href="#about3" aria-controls="about3" role="tab" data-toggle="tab"> <i class="fa fa-handshake-o" aria-hidden="true"></i> About Us 3</a></li>
+        <li role="presentation"><a href="#about3" aria-controls="about3" role="tab" data-toggle="tab"> <i class="fa fa-handshake-o" aria-hidden="true"></i> About Us 3 pawan</a></li>
          
       </ul>
     </div>
