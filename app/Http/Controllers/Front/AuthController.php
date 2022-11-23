@@ -22,6 +22,7 @@ use Session;
 class AuthController extends Controller
 {
     public function login(){
+      
       if(Auth::check()){
         return redirect()->route('home_route');
       }
@@ -29,7 +30,7 @@ class AuthController extends Controller
       if($redit == ""){
         \Session::put('redirectback', url()->previous());
       }
-      return view('frontend-view.auth.login');
+      return view('new-frontend.auth.login');
     }
 
     public function logged_in(Request $request){
