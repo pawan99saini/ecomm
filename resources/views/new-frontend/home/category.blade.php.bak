@@ -1,0 +1,4 @@
+@extends('new-frontend.layout.app')
+@section('content')
+  
+@endsection

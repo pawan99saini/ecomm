@@ -1,0 +1,1027 @@
+:root {
+  --primary: #81d8d0;
+  --white: #ffffff;
+  --black: #000000;
+  --font-family: "Poppins, sans-serif";
+  --font-family-sterling: "SterlingDisplay, sans-serif";
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 90%);
+  --black-1: hsl(0, 0%, 0%);
+  --black-2: hsl(0, 0%, 30%);
+  --ft-fy-fallback-1: sans-serif;
+  --ft-fy-1: "Poppins", var(--ft-fy-fallback-1);
+  --ft-se-400: 12px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+  font-family: "SterlingDisplay, sans-serif";
+  src: url("../fonts/SterlingDisplayRoman.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  color: #2b2a29;
+  font-family: "Montserrat";
+  user-select: auto;
+  overflow-x: hidden;
+}
+
+/* Breedcramps Start */
+.breadcrumb-menu {
+  padding-block: 10px !important;
+}
+.breadcrumb-menu li a {
+  text-transform: uppercase !important;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  opacity: 0.6;
+  text-decoration: none;
+}
+.breadcrumb-menu li a:hover {
+  color: var(--black);
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  background: url("https://cdn2.ethoswatches.com/static/frontend/Ethos-v2/destkop/en_US/images/icons/icon-view-all.svg")
+    no-repeat center center;
+  content: "";
+  height: 22px;
+  opacity: 0.6;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+/* category Banner starts */
+.cata-banner-img {
+  height: 150px;
+  background-color: var(--black);
+}
+.cata-banner-title {
+  position: absolute;
+  color: var(--white);
+  /* transform: translate(-50%, -50%); */
+  /* display: block; */
+  display: block;
+  width: 868px;
+  max-width: 86%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+/* Category main start */
+.dir-reverse {
+  flex-direction: row-reverse;
+}
+/* .w-250{
+    width: 250px !important;
+}
+.w-150{
+    width: 150px !important;
+} */
+.cata-main {
+  flex-basis: 75%;
+}
+.cata-sidebar {
+  flex-basis: 20%;
+}
+.toolbar-product {
+  margin-block: 25px;
+  align-items: center;
+}
+.sort-item {
+  font-size: 12px;
+  font-family: var(--font-family);
+}
+.sort-section,
+.view-mode {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.sort-section select {
+  background: #f4f4f4 no-repeat 94% 52% !important;
+  padding: 0px;
+  border: 1px solid transparent !important;
+  color: #404040;
+  text-transform: uppercase;
+  /* width: 70% !important; */
+  margin: 0;
+  font-size: 12px;
+  height: 32px;
+  padding: 4px 25px 5px 10px;
+}
+.sort-section select.sorter-options:focus {
+  color: rgba(0, 0, 0, 0.73);
+  letter-spacing: 0.5px;
+  border: 1px solid transparent !important;
+}
+.view-mode select {
+  background: #f4f4f4 no-repeat 94% 52% !important;
+  padding: 0px;
+  border: 1px solid transparent !important;
+  color: #404040;
+  text-transform: uppercase;
+  /* width: 70% !important; */
+  margin: 0;
+  font-size: 12px;
+  height: 32px;
+  padding: 4px 25px 5px 10px;
+}
+.view-mode select.sorter-options:focus {
+  color: rgba(0, 0, 0, 0.73);
+  letter-spacing: 0.5px;
+  border: 1px solid transparent !important;
+}
+
+.cGreen {
+  height: 20px;
+  width: 20px;
+  background-color: #3aaaad;
+  border-radius: 100px;
+  color: rgba(0, 186, 0, 0.792);
+}
+.cGreen:hover,
+.cRed:hover,
+.cBlue:hover,
+.cPink:hover {
+  border: 2px solid currentColor;
+  transition-duration: 0.3s;
+  transition-property: border;
+  transition-timing-function: ease-in;
+}
+.cRed {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(203 54 54);
+  border-radius: 100px;
+  color: rgba(249, 168, 168, 0.792);
+}
+.cBlue {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(140 117 255);
+  border-radius: 100px;
+  color: rgb(149, 130, 243);
+}
+.cPink {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(247 132 197);
+  border-radius: 100px;
+  color: rgb(255, 173, 219);
+}
+.totalColor {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+
+/* Product Section Start */
+
+/* Utilities Classes */
+
+.mt-8px {
+  margin-top: 8px !important;
+}
+.gap-10 {
+  gap: 10px !important;
+}
+.border-0 {
+  border: 0 !important;
+}
+.p-i-10 {
+  padding-inline: 10px !important;
+}
+
+/* Utilities Classes */
+
+.product-label,
+.product-price span {
+  line-height: 1.4;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  font-family: var(--font-family);
+  color: var(--black);
+}
+a.product-label:hover {
+  text-decoration: none;
+  color: var(--black);
+}
+.filter-subtitle .mob-filter-title {
+  margin-inline-end: 8px;
+}
+
+.sale-label {
+  position: absolute;
+  right: 10px;
+  bottom: 25%;
+  opacity: 0.9;
+  background-color: white;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+.cata-add-cart {
+  width: 100%;
+  /* top: 0; */
+  z-index: 1;
+  background-color: white;
+  font-weight: 600;
+  bottom: 0px;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.cata-img-wrapper:hover .cata-add-cart {
+  transition: all 0.2s ease-in-out;
+  visibility: visible;
+  opacity: 0.9;
+  color: var(--black);
+  text-decoration: none;
+}
+.cata-img-wrapper .ecicon {
+  display: inline-block;
+  font: normal normal normal 14px/1 EcIcons;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+}
+.cata-img-wrapper .heart {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  color: #000000ab;
+}
+.cata-img-wrapper .heart:hover {
+  color: #c52233;
+  transition: all 0.3s ease-in-out;
+}
+.layout-changer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.layout-changer .layout-changer-label {
+  cursor: pointer;
+}
+
+/* Filter sidebar Start */
+
+/* .filter-subtitle::after{
+    background: url("https://cdn2.ethoswatches.com/static/frontend/Ethos-v2/destkop/en_US/Magento_Catalog/images/icons/icon-filter.svg")no-repeat center center;
+    content: "";
+    content: "";
+    display: inline-block;
+    height: 25px;
+    margin: 0px auto;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 18px;
+} */
+.filter-subtitle {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  position: relative;
+  /* width: 100%; */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Accordians Start */
+.filter-menu .card .card-header .btn-header-link:after {
+  content: "-";
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #808080b8;
+  float: right;
+  transition: all 0.5s ease-in-out;
+}
+
+/* #main #price .card .card-header .btn-header-link.collapsed {
+    background: var(--white);
+    color: var(--black);
+  } */
+
+.filter-menu .card .card-header .btn-header-link.collapsed:after {
+  content: "+";
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+}
+
+/* #main #price .card .collapsing {
+    background:var(--white);
+    line-height: 30px;
+  } */
+
+/* #main #price .card .collapse {
+    border: 0;
+  }
+   */
+/* #main #price .card .collapse.show {
+    background: var(--white);
+    line-height: 30px;
+    color: #222;
+  } */
+.card-header {
+  background-color: white;
+}
+.card-header a {
+  width: 100%;
+  text-align: left;
+}
+.btn-header-link {
+  border-top: 1px solid #f4f4f4;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 0px;
+  letter-spacing: 0.5px;
+}
+.custom-price {
+  align-items: baseline;
+  margin-top: 10px;
+}
+.custom-price input {
+  border: 1px solid gray !important;
+  height: 32px;
+}
+.delimiter {
+  margin-inline: 8px;
+}
+.am-filter-go {
+  font-size: 10px;
+  height: 34px;
+  line-height: 100%;
+  width: 100%;
+  padding: 12px 0;
+  background: #404040;
+  border: 1px solid #404040;
+  color: #fff;
+  border-radius: 0px;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+  min-height: 34px;
+  margin: 10px 0 0 !important;
+  font-family: var(--font-family);
+}
+.am-filter-go:hover,
+.am-filter-go:focus,
+.am-filter-go:active {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* Checkbox */
+
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+.custom-checkbox input[type="checkbox"] + b {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--primary);
+  cursor: pointer;
+  line-height: 1;
+  outline: 0;
+  text-align: center;
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+}
+/* .custom-checkbox input[type=checkbox]:hover + b {
+  border-color: #49b35e;
+} */
+.custom-checkbox input[type="checkbox"]:hover + b:after {
+  color: #49b35e;
+  content: "✔";
+}
+.custom-checkbox input[type="checkbox"]:checked + b:after {
+  content: "✔";
+}
+.custom-checkbox .sub-label {
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;
+}
+
+/* Checkbox */
+
+/* Accordians End */
+
+/* Filter sidebar Ends */
+
+/* SideNav Start */
+
+.filterSidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* padding-top: 60px; */
+}
+.filterSidenav-head {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: end;
+}
+
+.filterSidenav-body {
+  padding: 0px 40px;
+}
+.filterSidenav-body h2 {
+  margin-top: 150px;
+}
+.filterSidenav-body p {
+  margin-top: 25px;
+}
+
+.filterSidenav a {
+  /* padding: 8px 8px 8px 32px; */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* .filterSidenav-links ul li a:before{
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    margin: 0 auto;
+    background: transparent;
+    left: 0;
+    right: auto;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+
+  }*/
+.filterSidenav-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.filterSidenav-links ul li a .arrow {
+  border: solid #b3b3b3;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* .filterSidenav a:hover {
+    color: #f1f1f1;
+  } */
+
+.filterSidenav .closebtn {
+  top: 0;
+  right: 25px;
+  color: var(--white);
+  font-size: 36px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* SideNav End */
+
+/* Wish List SideNav Start */
+
+.wishListSidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* padding-top: 60px; */
+  right: -50px;
+  border-left: 5px solid #81d8d0;
+}
+.wishListSidenav-head {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: end;
+}
+
+.wishListSidenav-body {
+  padding: 0px 40px;
+}
+.wishListSidenav-body h2 {
+  margin-top: 150px;
+}
+.wishListSidenav-body p {
+  margin-block: 25px;
+}
+
+.wishListSidenav a {
+  /* padding: 8px 8px 8px 32px; */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* .wishListSidenav-links ul li a:before{
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  margin: 0 auto;
+  background: transparent;
+  left: 0;
+  right: auto;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+
+}*/
+.wishListSidenav-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.wishListSidenav-links ul li a .arrow {
+  border: solid #b3b3b3;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* .wishListSidenav a:hover {
+  color: #f1f1f1;
+} */
+
+.wishListSidenav .closebtn {
+  top: 0;
+  right: 25px;
+  color: var(--white);
+  font-size: 36px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Wish List SideNav End */
+
+/* My Cart SideNav Start */
+
+.cartSidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* padding-top: 60px; */
+  right: -50px;
+  border-left: 5px solid #81d8d0;
+}
+.cartSidenav-head {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: end;
+}
+
+.cartSidenav-body {
+  padding: 0px 40px;
+}
+.cartSidenav-body h2 {
+  margin-top: 150px;
+}
+.cartSidenav-body p {
+  margin-block: 25px;
+}
+
+.cartSidenav a {
+  /* padding: 8px 8px 8px 32px; */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* .cartSidenav-links ul li a:before{
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    margin: 0 auto;
+    background: transparent;
+    left: 0;
+    right: auto;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  
+  }*/
+.cartSidenav-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.cartSidenav-links ul li a .arrow {
+  border: solid #b3b3b3;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* .cartSidenav a:hover {
+    color: #f1f1f1;
+  } */
+
+.cartSidenav .closebtn {
+  top: 0;
+  right: 25px;
+  color: var(--white);
+  font-size: 36px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* My Cart SideNav End */
+
+/* Size Guide SideNav Start */
+
+.sizeGuideSidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 12;
+  top: 0px;
+  background-color: #80808094;
+  overflow-x: hidden;
+  /* transition: 0.5s; */
+  right: -50px;
+  /* border-left: 5px solid #81d8d0; */
+}
+.sizeGuideSidenav-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.sizeGuideSidenav-body {
+  padding: 0px 40px;
+}
+.sizeGuideSidenav-body p {
+  margin-block: 25px;
+}
+
+.sizeGuideSidenav a {
+  /* padding: 8px 8px 8px 32px; */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* .sizeGuideSidenav-links ul li a:before{
+      content: "";
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      margin: 0 auto;
+      background: transparent;
+      left: 0;
+      right: auto;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    
+    }*/
+.sizeGuideSidenav-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.sizeGuideSidenav-links ul li a .arrow {
+  border: solid #b3b3b3;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* .sizeGuideSidenav a:hover {
+      color: #f1f1f1;
+    } */
+
+.sizeGuideSidenav .closebtn {
+  top: 0;
+  right: 25px;
+  color: var(--black);
+  font-size: 50px;
+  line-height: 0px;
+  cursor: pointer;
+}
+.viewFour .sale-label {
+  bottom: 38% !important;
+}
+
+/* Size Guide SideNav End */
+
+@media (max-width: 1450px) and (min-width: 991px) {
+  .viewFour .sale-label {
+    bottom: 50% !important;
+  }
+  .viewThree .sale-label {
+    bottom: 37% !important;
+  }
+  .viewFour .totalColor {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cata-sidebar {
+    display: none;
+  }
+  .cata-main {
+    flex-basis: 100%;
+  }
+  .toolbar-product .filter-subtitle {
+    display: block !important;
+    flex-basis: 20%;
+    margin: 0;
+    cursor: pointer;
+  }
+  .layout-changer {
+    display: none;
+  }
+  .sale-label {
+    bottom: 30% !important;
+  }
+}
+@media (max-width: 768px) {
+  .cata-main {
+    padding-inline: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .hide-on-mob-sidebar-left {
+    display: none;
+  }
+}
+
+/*  */
+
+.cata-img-wrapper .heart {
+  border-radius: 100%;
+  height: 32px;
+  opacity: 0;
+  right: 5px !important;
+  top: -5px;
+  text-align: center;
+  transition: all 0.2s ease-in-out !important;
+  visibility: hidden;
+  width: 32px;
+}
+
+.cata-img-wrapper:hover .heart {
+  opacity: 1;
+  top: 0;
+  visibility: visible;
+}
+.productChange {
+  transition: all 0.6s ease-out;
+}
+.change-four {
+  display: flex;
+  gap: 1px;
+  flex-wrap: wrap;
+  width: 28px;
+}
+.change-four span {
+  background-color: #dedede;
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+}
+
+/* Pagination */
+
+.pagination {
+  /* __button */
+  --button_ft-se: var(--ft-se-400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  --button_bd-cr: inherit;
+  --button_cr: inherit;
+  color: var(--button_cr);
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background-color: var(--button_bd-cr);
+  justify-content: center;
+  align-items: center;
+  font-size: var(--button_ft-se, var(--ft-se-400));
+  font-weight: 700;
+  position: relative;
+  /* mods */
+  transition: all 140ms linear;
+}
+.button__icon {
+  font-size: var(--button__icon_ft-se, 0.6em);
+}
+.button_square {
+  width: var(--button_square_wh, 25px);
+  aspect-ratio: 1;
+}
+.button_active {
+  --button_cr: var(--button_cr_active, var(--white-1));
+  --button_bd-cr: var(--button_bd-cr_active, var(--black-2));
+}
+.button:hover:not(.button_active) {
+  --button_bd-cr: var(--button_bd-cr_hov, var(--white-2));
+}
+
+#pagination__next-button::before {
+  background: url(https://cdn2.ethoswatches.com/static/frontend/Ethos-v2/destkop/en_US/images/icons/pagination-right.svg)
+    no-repeat center center;
+  content: "";
+  height: 22px;
+  opacity: 0.6;
+  padding-right: 10px;
+  padding-left: 15px;
+  position: absolute;
+  top: 2px;
+}
+#pagination__prev-button::before {
+  background: url(https://cdn2.ethoswatches.com/static/frontend/Ethos-v2/destkop/en_US/images/icons/pagination-left.svg)
+    no-repeat center center;
+  content: "";
+  height: 22px;
+  opacity: 0.6;
+  padding-right: 10px;
+  padding-left: 15px;
+  position: absolute;
+  top: 2px;
+}
+
+/* Pagination */
+
+.select-size::before {
+  border: solid var(--black);
+  content: "";
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 4px;
+  margin-bottom: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: all 0.2s ease-in;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  position: absolute;
+  top: 4px;
+  right: -16px;
+}
+.select-size.size-selected::before {
+  transform: rotate(224deg);
+  -webkit-transform: rotate(224deg);
+  transition: all 0.2s ease-in;
+  margin-bottom: 0;
+  top: 7px;
+}
+/* .size-Un-selected{
+  color: black;
+} */
+
+/* Custom select box */
+
+/*Styling Selectbox*/
+.sort-section .dropdown {
+  width: 300px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all 0.5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  height: 100%;
+  text-align: left;
+}
+.sort-section .dropdown .select {
+  cursor: pointer;
+  display: block;
+  padding: 6px 10px;
+}
+.sort-section .dropdown .select span {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+.sort-section .dropdown .select > i {
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  float: right;
+  line-height: 20px;
+}
+.sort-section .dropdown:hover {
+  box-shadow: 0 0 4px rgb(204, 204, 204);
+}
+.sort-section .dropdown:active {
+  background-color: #f8f8f8;
+}
+.sort-section .dropdown.active:hover,
+.dropdown.active {
+  box-shadow: 0 0 4px rgb(204, 204, 204);
+  border-radius: 5px 5px 0 0;
+  background-color: #f8f8f8;
+}
+.sort-section .dropdown.active .select > i {
+  transform: rotate(-180deg);
+}
+.sort-section .dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: 0 1px 5px 5px;
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+}
+.sort-section .dropdown .dropdown-menu li {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+.sort-section .dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+.sort-section .dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+.sort-section .dropdown .dropdown-menu li:active {
+  background-color: #e2e2e2;
+}

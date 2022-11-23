@@ -1,0 +1,243 @@
+:root {
+  --primary: #81d8d0;
+  --white: #ffffff;
+  --black: #000000;
+  --font-family: "Poppins, sans-serif";
+  --font-family-sterling: "SterlingDisplay, sans-serif";
+}
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+  font-family: "SterlingDisplay, sans-serif";
+  src: url("../fonts/SterlingDisplayRoman.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  color: #2b2a29;
+  font-family: "Montserrat";
+  user-select: auto;
+  overflow-x: hidden;
+}
+
+.account-wrapper {
+  background-color: #f9f9f9;
+  padding-block: 60px;
+}
+
+.account-layout {
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.account-layout-sidebar {
+  background-color: var(--white);
+  position: sticky;
+  top: 100px;
+}
+.account-layout-content {
+  background-color: var(--white);
+  padding: 20px;
+}
+
+.account-sidebar-header {
+  padding: 25px;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.account-sidebar-header .account-sidebar-header-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: var(--font-family-sterling);
+}
+.account-sidebar-header .account-sidebar-header-details,
+.account-sidebar-header-sign-out {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: var(--font-family);
+}
+.account-sidebar-header .account-sidebar-header-details strong {
+  font-weight: 500;
+}
+.account-sidebar-header .account-sidebar-header-sign-out a:hover {
+  color: black;
+}
+
+/* Account Sidebar Nav */
+
+.account-sidebar-nav a.sidebar-nav-items {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: var(--font-family-sterling);
+  letter-spacing: 1.2px;
+  display: block;
+  padding: 15px 25px;
+  position: relative;
+  border-top: 1px solid #e8e8e8;
+}
+.account-sidebar-nav a.sidebar-nav-items:hover {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.sidebar-nav-items.active-item::before {
+  border: solid var(--black);
+  content: "";
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 4px;
+  margin-bottom: 0;
+  transform: rotate(320deg);
+  -webkit-transform: rotate(320deg);
+  transition: all 0.2s ease-in;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  position: absolute;
+  top: 29px;
+  right: 30px;
+}
+.sidebar-nav-items:first-child {
+  border-top: none !important;
+}
+
+/* Account content Section */
+
+.account-layout-content-wrap {
+  padding: 40px 50px;
+}
+
+.account-layout-content .account-section-header {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  font-family: var(--font-family-sterling);
+}
+
+.account-section-header.under-title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/icon-divider-dark.svg);
+  width: 121px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  left: 5px;
+  margin: 5px 0;
+  bottom: -34px;
+}
+
+.account-section-inner {
+  padding-top: 40px;
+}
+
+.account-section-user-mail span {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: var(--font-family);
+}
+.account-section-inner input {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: #333;
+  width: 100%;
+  height: 32px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+.account-section-inner .sign-input {
+  position: relative;
+  z-index: 1;
+}
+.account-section-inner .sign-input ~ label {
+  z-index: 0;
+}
+.account-section-inner .login-form {
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+.account-section-inner .login-form:first-child {
+  margin-top: 12px;
+}
+
+.update-details .update {
+  display: flex;
+  color: var(--black);
+  background: #fff;
+  border: 1px solid var(--black);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+.update-details .update span {
+  padding: 9px 30px;
+}
+.update-details .update:hover {
+  color: var(--black);
+  background-color: var(--primary);
+}
+fieldset.update-pr-details {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* update password */
+
+.update-password .update-pass-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: var(--font-family-sterling);
+  margin-block: 25px 25px;
+}
+.update-password .change-pass,
+.cancel-change {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: var(--font-family);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.update-password .update-details {
+  margin-top: 20px;
+}
+
+/* Makrketing Subscription section */
+.field-permission {
+  margin-bottom: 30px;
+}
+.field-permission label.radio {
+  /* display: inline-block; */
+  display: table-cell;
+  width: auto;
+  margin: 0;
+}
+
+.field-permission label.radio input {
+  display: none;
+}
+
+.field-permission label.radio input:checked + span {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.field-permission label.radio span {
+  display: block;
+  border: 1px solid #e8e8e8;
+  color: #555;
+  font-size: 14px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  padding: 16px 30px;
+}

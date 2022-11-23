@@ -1,0 +1,392 @@
+.doubly-float {
+    position: fixed;
+    top: 100px;
+    left: 1% !important;
+    z-index: 1 !important;
+    bottom: auto !important;
+}
+
+select.currency-switcher {
+    display: none;
+}
+
+select.currency-switcher {
+    margin: 0px;
+    position: relative;
+    top: auto;
+}
+
+select {
+    word-wrap: normal;
+}
+
+.doubly-nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: "Helvetica Neue", Arial;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 40px;
+    outline: 0;
+    padding-left: 12px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    transition: none;
+    /* transition: all .2s ease-in-out; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.doubly-nice-select,
+.doubly-nice-select .list {
+    background: #FFFFFF;
+}
+
+.doubly-nice-select.right {
+    float: right;
+}
+
+.doubly-nice-select .current,
+.doubly-nice-select .list .option {
+    color: #996542;
+}
+
+.flags {
+    background-image: url(https://cdn.shopify.com/s/files/1/0572/3491/5537/t/16/assets/currency-flags.png?v=1659271989);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 10px 4px 0 0 !important;
+    float: left;
+}
+
+.flags-India {
+    background-position: -445px -275px;
+}
+
+.flags-Afghanistan,
+.flags-Albania,
+.flags-Algeria,
+.flags-Andorra,
+.flags-Angola,
+.flags-Antigua-and-Barbuda,
+.flags-Argentina,
+.flags-Armenia,
+.flags-Aruba,
+.flags-Australia,
+.flags-Austria,
+.flags-Azerbaijan,
+.flags-Bahamas,
+.flags-Bahrain,
+.flags-Bangladesh,
+.flags-Barbados,
+.flags-Belarus,
+.flags-Belgium,
+.flags-Belize,
+.flags-Benin,
+.flags-Bermuda,
+.flags-Bhutan,
+.flags-Bitcoin,
+.flags-Bolivia,
+.flags-Bosnia-and-Herzegovina,
+.flags-Botswana,
+.flags-Brazil,
+.flags-Brunei,
+.flags-Bulgaria,
+.flags-Burkina-Faso,
+.flags-Burundi,
+.flags-Cambodia,
+.flags-Cameroon,
+.flags-Canada,
+.flags-Cape-Verde,
+.flags-Cayman-Islands,
+.flags-Central-African-Republic,
+.flags-Chad,
+.flags-Chile,
+.flags-China,
+.flags-Colombia,
+.flags-Comoros,
+.flags-Congo-Democratic,
+.flags-Congo-Republic,
+.flags-Costa-Rica,
+.flags-Cote-d_Ivoire,
+.flags-Croatia,
+.flags-Cuba,
+.flags-Curacao,
+.flags-Cyprus,
+.flags-Czech-Republic,
+.flags-Denmark,
+.flags-Djibouti,
+.flags-Dominica,
+.flags-Dominican-Republic,
+.flags-East-Timor,
+.flags-Ecuador,
+.flags-Egypt,
+.flags-El-Salvador,
+.flags-Equatorial-Guinea,
+.flags-Eritrea,
+.flags-Estonia,
+.flags-Ethiopia,
+.flags-European-Union,
+.flags-Falkland-Islands,
+.flags-Fiji,
+.flags-Finland,
+.flags-France,
+.flags-Gabon,
+.flags-Gambia,
+.flags-Georgia,
+.flags-Germany,
+.flags-Ghana,
+.flags-Gibraltar,
+.flags-Grecee,
+.flags-Grenada,
+.flags-Guatemala,
+.flags-Guernsey,
+.flags-Guinea,
+.flags-Guinea-Bissau,
+.flags-Guyana,
+.flags-Haiti,
+.flags-Honduras,
+.flags-Hong-Kong,
+.flags-Hungary,
+.flags-IMF,
+.flags-Iceland,
+.flags-India,
+.flags-Indonesia,
+.flags-Iran,
+.flags-Iraq,
+.flags-Ireland,
+.flags-Isle-of-Man,
+.flags-Israel,
+.flags-Italy,
+.flags-Jamaica,
+.flags-Japan,
+.flags-Jersey,
+.flags-Jordan,
+.flags-Kazakhstan,
+.flags-Kenya,
+.flags-Korea-North,
+.flags-Korea-South,
+.flags-Kosovo,
+.flags-Kuwait,
+.flags-Kyrgyzstan,
+.flags-Laos,
+.flags-Latvia,
+.flags-Lebanon,
+.flags-Lesotho,
+.flags-Liberia,
+.flags-Libya,
+.flags-Liechtenstein,
+.flags-Lithuania,
+.flags-Luxembourg,
+.flags-Macao,
+.flags-Macedonia,
+.flags-Madagascar,
+.flags-Malawi,
+.flags-Malaysia,
+.flags-Maldives,
+.flags-Mali,
+.flags-Malta,
+.flags-Marshall-Islands,
+.flags-Mauritania,
+.flags-Mauritius,
+.flags-Mexico,
+.flags-Micronesia-_Federated_,
+.flags-Moldova,
+.flags-Monaco,
+.flags-Mongolia,
+.flags-Montenegro,
+.flags-Morocco,
+.flags-Mozambique,
+.flags-Myanmar,
+.flags-Namibia,
+.flags-Nauru,
+.flags-Nepal,
+.flags-Netherlands,
+.flags-New-Zealand,
+.flags-Nicaragua,
+.flags-Niger,
+.flags-Nigeria,
+.flags-Norway,
+.flags-Oman,
+.flags-Pakistan,
+.flags-Palau,
+.flags-Panama,
+.flags-Papua-New-Guinea,
+.flags-Paraguay,
+.flags-Peru,
+.flags-Philippines,
+.flags-Poland,
+.flags-Portugal,
+.flags-Qatar,
+.flags-Romania,
+.flags-Russia,
+.flags-Rwanda,
+.flags-Saint-Helena,
+.flags-Saint-Kitts-and-Nevis,
+.flags-Saint-Lucia,
+.flags-Saint-Vincent-and-the-Grenadines,
+.flags-Samoa,
+.flags-San-Marino,
+.flags-Sao-Tome-and-Principe,
+.flags-Saudi-Arabia,
+.flags-Seborga,
+.flags-Senegal,
+.flags-Serbia,
+.flags-Seychelles,
+.flags-Sierra-Leone,
+.flags-Singapore,
+.flags-Slovakia,
+.flags-Slovenia,
+.flags-Solomon-Islands,
+.flags-Somalia,
+.flags-South-Africa,
+.flags-South-Sudan,
+.flags-Spain,
+.flags-Sri-Lanka,
+.flags-Sudan,
+.flags-Suriname,
+.flags-Swaziland,
+.flags-Sweden,
+.flags-Switzerland,
+.flags-Syria,
+.flags-Taiwan,
+.flags-Tajikistan,
+.flags-Tanzania,
+.flags-Thailand,
+.flags-Togo,
+.flags-Tonga,
+.flags-Trinidad-and-Tobago,
+.flags-Tunisia,
+.flags-Turkey,
+.flags-Turkmenistan,
+.flags-Tuvalu,
+.flags-Uganda,
+.flags-Ukraine,
+.flags-United-Arab-Emirates,
+.flags-United-Kingdom,
+.flags-United-States,
+.flags-Uruguay,
+.flags-Uzbekistan,
+.flags-Vanuatu,
+.flags-Vatican-City,
+.flags-Venezuela,
+.flags-Vietnam,
+.flags-Wallis-and-Futuna,
+.flags-XAG,
+.flags-XAU,
+.flags-XPT,
+.flags-Yemen,
+.flags-Zambia,
+.flags-Zimbabwe {
+    width: 30px;
+    height: 20px;
+}
+.doubly-float .doubly-nice-select .list {
+top: 40px!important;
+left: -25px!important;
+right: auto;
+}
+.doubly-nice-select .list {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 0 1px rgb(68 68 68 / 11%);
+box-sizing: border-box;
+margin: 4px 0 0!important;
+opacity: 0;
+overflow: scroll;
+overflow-x: hidden;
+padding: 0;
+pointer-events: none;
+position: absolute;
+top: 100%;
+max-height: 260px;
+left: 0;
+-webkit-transform-origin: 50% 0;
+transform-origin: 50% 0;
+-webkit-transform: scale(.75) translateY(-21px);
+transform: scale(.75) translateY(-21px);
+transition: all .2s cubic-bezier(.5,0,0,1.25),opacity .15s ease-out;
+z-index: 100000;
+}
+.doubly-nice-select .current, .doubly-nice-select .list .option {
+color: #996542;
+}
+.doubly-nice-select .option {
+font-size: 13px !important;
+float: none!important;
+text-align: left !important;
+margin: 0px !important;
+font-family: Helvetica Neue,Arial !important;
+letter-spacing: normal;
+text-transform: none;
+display: block!important;
+cursor: pointer;
+font-weight: 400;
+line-height: 40px!important;
+list-style: none;
+min-height: 40px;
+min-width: 55px;
+margin-bottom: 0;
+outline: 0;
+padding-left: 18px!important;
+padding-right: 52px!important;
+text-align: left;
+transition: all .2s;
+}
+.flags-United-States {
+background-position: -365px -5px;
+}
+.flags-United-Arab-Emirates {
+background-position: -445px -5px;
+}
+.flags-United-Kingdom {
+background-position: -405px -5px;
+}
+.flags-European-Union {
+background-position: -165px -485px;
+}
+.flags-Canada {
+background-position: -365px -395px;
+}
+.flags-Australia {
+background-position: -285px -455px;
+}
+.doubly-nice-select.open .list {
+opacity: 1;
+pointer-events: auto;
+-webkit-transform: scale(1) translateY(0);
+transform: scale(1) translateY(0);
+z-index: 1000000 !important;
+justify-content: flex-start;
+width: 210px;
+}
+.doubly-nice-select:after {
+border-bottom: 2px solid #999;
+border-right: 2px solid #999;
+content: "";
+display: block;
+height: 5px;
+box-sizing: content-box;
+pointer-events: none;
+position: absolute;
+right: 14px;
+top: 16px;
+-webkit-transform-origin: 66% 66%;
+transform-origin: 66% 66%;
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+transition: transform .15s ease-in-out;
+width: 5px;
+}
