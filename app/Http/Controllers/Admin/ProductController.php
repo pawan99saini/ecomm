@@ -276,7 +276,7 @@ class ProductController extends Controller
             $product_data['sales_price'] = $request->mrp_price - $request->discount;
         }
         if (!empty($request->product_image)) {
-            $path = public_path('upload/file/');
+            $path = public_path('file/');
             $img_res = $this->upload_img($path, $request->product_image);
             if (!$img_res['error']) {
                 $product_image = $img_res['name'];

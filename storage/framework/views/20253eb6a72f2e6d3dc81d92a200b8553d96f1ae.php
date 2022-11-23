@@ -136,7 +136,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sale</a>
+                        <a class="nav-link" href="#">Sale  hh</a>
                     </li>
                     <li class="nav-item mobile-menu-second arrow-mover">
                         <a class="nav-link" href="#">Collection<i class="Uparrow"></i></a>
@@ -528,118 +528,38 @@
                                 </div>
                             </div>
                             <ul>
-                                <li><a class="underline-on-hover" href="index.html">Home</a></li>
+                            <li><a class="underline-on-hover" href="index.html">Home</a></li>
                                 <li class="dropdown position-static arrow-mover"><a class="underline-on-hover"
                                         href="javascript:void(0)">Shop<i class="Uparrow"></i></a>
+                                        <?php $categories = App\Models\Category::with('subcategories')->get();
+      
+      ?>
                                     <ul class="mega-menu d-block">
                                         <li class="d-flex">
+                                        <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                             <ul class="d-block">
-                                                <li class="menu_title"><a href="javascript:void(0)">Classic
-                                                        Variation1</a></li>
-														<?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                <li class="menu_title"><a href="<?php echo e(route('category',$category->slug)); ?>"><?php echo e($category->name); ?></a></li>
+                                                <?php if($category->subcategories): ?>
+                <?php $__currentLoopData = $category->subcategories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $subcategory): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>	
                                                 <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative"><?php echo e($row->name); ?>
-
-                                                            1</span></a>
+                                                            class="underline-lite-on-hover position-relative">
+                                                            <?php echo e($subcategory->name); ?></span></a>
                                                 </li>
-												<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <?php endif; ?>
+                                               
                                             </ul>
-                                            <ul class="d-block">
-                                                <li class="menu_title"><a href="javascript:void(0)">Classic
-                                                        Variation2</a></li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                            </ul>
-                                            <ul class="d-block">
-                                                <li class="menu_title"><a href="javascript:void(0)">Classic
-                                                        Variation3</a></li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                            </ul>
-                                            <ul class="d-block">
-                                                <li class="menu_title"><a href="javascript:void(0)">Classic
-                                                        Variation4</a></li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                            </ul>
-                                            <ul>
+                                           
+                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                           
+                                            <!-- <ul>
                                                 <li class="sub-menu-img">
                                                     <img src="<?php echo e(asset('front/images/instragram-image/3.jpg')); ?>" />
                                                     <span class="sub-menu-img-title">
                                                         Discover<br> More <br>Items
                                                     </span>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                         <li>
                                             <ul class="ec-main-banner w-100">

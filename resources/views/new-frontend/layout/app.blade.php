@@ -136,7 +136,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sale</a>
+                        <a class="nav-link" href="#">Sale  hh</a>
                     </li>
                     <li class="nav-item mobile-menu-second arrow-mover">
                         <a class="nav-link" href="#">Collection<i class="Uparrow"></i></a>
@@ -528,117 +528,38 @@
                                 </div>
                             </div>
                             <ul>
-                                <li><a class="underline-on-hover" href="index.html">Home</a></li>
+                            <li><a class="underline-on-hover" href="index.html">Home</a></li>
                                 <li class="dropdown position-static arrow-mover"><a class="underline-on-hover"
                                         href="javascript:void(0)">Shop<i class="Uparrow"></i></a>
+                                        @php $categories = App\Models\Category::with('subcategories')->get();
+      
+      @endphp
                                     <ul class="mega-menu d-block">
                                         <li class="d-flex">
+                                        @foreach($categories as $category)
                                             <ul class="d-block">
-                                                <li class="menu_title"><a href="javascript:void(0)">Classic
-                                                        Variation1</a></li>
-														@foreach ($categories as $row)
+                                                <li class="menu_title"><a href="{{ route('category',$category->slug) }}">{{ $category->name}}</a></li>
+                                                @if($category->subcategories)
+                @foreach($category->subcategories as $subcategory)	
                                                 <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">{{ $row->name }}
-                                                            1</span></a>
+                                                            class="underline-lite-on-hover position-relative">
+                                                            {{ $subcategory->name }}</span></a>
                                                 </li>
-												@endforeach
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
+                                                @endforeach
+                @endif
+                                               
                                             </ul>
-                                            <ul class="d-block">
-                                                <li class="menu_title"><a href="javascript:void(0)">Classic
-                                                        Variation2</a></li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                            </ul>
-                                            <ul class="d-block">
-                                                <li class="menu_title"><a href="javascript:void(0)">Classic
-                                                        Variation3</a></li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                            </ul>
-                                            <ul class="d-block">
-                                                <li class="menu_title"><a href="javascript:void(0)">Classic
-                                                        Variation4</a></li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                                <li class="sub-menu-d"><a href="javascript:void(0)"><span
-                                                            class="underline-lite-on-hover position-relative">Categories
-                                                            1</span></a>
-                                                </li>
-                                            </ul>
-                                            <ul>
+                                           
+                                            @endforeach
+                                           
+                                            <!-- <ul>
                                                 <li class="sub-menu-img">
                                                     <img src="{{asset('front/images/instragram-image/3.jpg')}}" />
                                                     <span class="sub-menu-img-title">
                                                         Discover<br> More <br>Items
                                                     </span>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                         <li>
                                             <ul class="ec-main-banner w-100">

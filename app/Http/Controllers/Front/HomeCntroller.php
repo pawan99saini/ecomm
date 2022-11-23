@@ -33,7 +33,10 @@ use App\Models\Wishlist;
 class HomeCntroller extends Controller
 {
     public function index() {
-        return view('new-frontend.home.index');
+
+        $products = Product::where('status',1)->get();
+        $sliders = Slider::where('status',1)->get();
+        return view('new-frontend.home.index',compact('products','sliders'));
 
     }
 

@@ -210,7 +210,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center heading-title">
-                    <h2 class="title-txt">Hot Sales </h2>
+                    <h2 class="title-txt">Hot Sales</h2>
                     <img onerror="handleError(this);"src="{{ asset('front_assets/images/headline.png') }}">
                 </div>
                 <div class="col-xs-12">

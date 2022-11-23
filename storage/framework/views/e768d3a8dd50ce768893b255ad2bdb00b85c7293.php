@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('content'); ?>
        <!-- Main Slider Start -->
        <div class="sticky-header-next-sec ec-main-slider section section-space-pb">
@@ -7,25 +8,17 @@
                 
                 <!--Carousel Slides-->
                 <div class="carousel-inner">
-                    
-                    <div class="carousel-item active">
-                        <img src="https://cdn.shopify.com/s/files/1/0572/3491/5537/files/3_garden_of_eden_1.png?v=1660052977"
+                    <?php $__currentLoopData = $sliders; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $k=>$slider): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <div class="carousel-item <?php echo e($k==0 ? 'active' : ''); ?> ">
+                        <img src="<?php echo e(asset('/file/'.$slider->image)); ?>"
                             alt="Lake">
                         <div class="carousel-caption banner-caption">
-                            <h5 class="position-relative"><span class="position-absolute">New</span>Arrivals</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                            <h5 class="position-relative"><span class="position-absolute"><?php echo e($slider->title); ?></h5>
+                            <p><?php echo e($slider->description); ?></p>
                             <a href="category.html" class="btn btn-lg btn-secondary">Shop Now</a>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://cdn.shopify.com/s/files/1/0572/3491/5537/files/opalina_banner_2000x990_3.png?v=1661615849"
-                            alt="Tree">
-                        <div class="carousel-caption banner-caption">
-                            <h5 class="position-relative"><span class="position-absolute">New</span>Arrivals</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                            <a href="category.html" class="btn btn-lg btn-secondary">Shop Now</a>
-                        </div>
-                    </div>
+                   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
                 <!--Carousel Previous Next Controls-->
                 <a class="carousel-control-prev" href="#carouselExample" data-slide="prev">
@@ -68,14 +61,12 @@
             </div>
 
             <div class="row p-i-2">
-
+           <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6  ec-product-content" data-animation="fadeInUp">                   
                     <div class="position-relative cata-img-wrapper">
                         <a href="Product.html" target="_blank">
                           <img
-                            src="https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__O_22FRO067PL06-GC_010_1200x.jpg?v=1667335073"
-                            onmouseover="this.src='https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__T_22FKT024KN02-NA_002.jpg?v=1667335626'"
-                            onmouseout="this.src='https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__O_22FRO067PL06-GC_010_1200x.jpg?v=1667335073'"
+                            src="<?php echo e(asset('/file/'.$product->product_image)); ?>"
                           />
   
                           <div class="cata-add-cart position-absolute">
@@ -91,103 +82,15 @@
                       <span class="sale-label"> 30% OFF </span>
                       <div class="mt-8px">
                         <a class="product-label" href=""
-                          ><span>Maggia Faux Leather Jacket</span></a
+                          ><span><?php echo e($product->name); ?></span></a
                         >
                         <div class="product-price">
-                          <span>&#8377;5000.00</span>
+                          <span>&#8377;<?php echo e($product->mrp_price); ?></span>
                         </div>
                       </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6  ec-product-content" data-animation="fadeInUp">                   
-                    <div class="position-relative cata-img-wrapper">
-                        <a href="Product.html" target="_blank">
-                          <img
-                            src="https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__O_22FRO067PL06-GC_010_1200x.jpg?v=1667335073"
-                            onmouseover="this.src='https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__T_22FKT024KN02-NA_002.jpg?v=1667335626'"
-                            onmouseout="this.src='https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__O_22FRO067PL06-GC_010_1200x.jpg?v=1667335073'"
-                          />
-  
-                          <div class="cata-add-cart position-absolute">
-                            <a href="#" class="cata-add-cart">Add to cart</a>
-                           
-                          </div>
-                          <button class="float-right heart position-absolute">
-                            <i class="ecicon eci-heart-o"></i>
-                          </button>
-                        </a>
-                      </div>
-  
-                      <span class="sale-label"> 30% OFF </span>
-                      <div class="mt-8px">
-                        <a class="product-label" href=""
-                          ><span>Maggia Faux Leather Jacket</span></a
-                        >
-                        <div class="product-price">
-                          <span>&#8377;5000.00</span>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6  ec-product-content" data-animation="fadeInUp">                   
-                    <div class="position-relative cata-img-wrapper">
-                        <a href="Product.html" target="_blank">
-                          <img
-                            src="https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__O_22FRO067PL06-GC_010_1200x.jpg?v=1667335073"
-                            onmouseover="this.src='https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__T_22FKT024KN02-NA_002.jpg?v=1667335626'"
-                            onmouseout="this.src='https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__O_22FRO067PL06-GC_010_1200x.jpg?v=1667335073'"
-                          />
-  
-                          <div class="cata-add-cart position-absolute">
-                            <a href="#" class="cata-add-cart">Add to cart</a>
-                            
-                          </div>
-                          <button class="float-right heart position-absolute">
-                            <i class="ecicon eci-heart-o"></i>
-                          </button>
-                        </a>
-                      </div>
-  
-                      <span class="sale-label"> 30% OFF </span>
-                      <div class="mt-8px">
-                        <a class="product-label" href=""
-                          ><span>Maggia Faux Leather Jacket</span></a
-                        >
-                        <div class="product-price">
-                          <span>&#8377;5000.00</span>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6  ec-product-content" data-animation="fadeInUp">                   
-                    <div class="position-relative cata-img-wrapper">
-                        <a href="Product.html" target="_blank">
-                          <img
-                            src="https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__O_22FRO067PL06-GC_010_1200x.jpg?v=1667335073"
-                            onmouseover="this.src='https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__T_22FKT024KN02-NA_002.jpg?v=1667335626'"
-                            onmouseout="this.src='https://cdn.shopify.com/s/files/1/0424/6647/6192/products/9.30__O_22FRO067PL06-GC_010_1200x.jpg?v=1667335073'"
-                          />
-  
-                          <div class="cata-add-cart position-absolute">
-                            <a href="#" class="cata-add-cart">Add to cart</a>
-                            
-                          </div>
-                          <button class="float-right heart position-absolute">
-                            <i class="ecicon eci-heart-o"></i>
-                          </button>
-                        </a>
-                      </div>
-  
-                      <span class="sale-label"> 30% OFF </span>
-                      <div class="mt-8px">
-                        <a class="product-label" href=""
-                          ><span>Maggia Faux Leather Jacket</span></a
-                        >
-                        <div class="product-price">
-                          <span>&#8377;5000.00</span>
-                        </div>
-                      </div>
-                </div>
-
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
             </div>
 

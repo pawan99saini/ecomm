@@ -28,7 +28,8 @@ class ProductController extends Controller
 
     public function categories(Request $request, $slug)
     {
-        return view('new-frontend.home.category');
+        $category = Category::with('products')->where('slug',$slug)->first();
+        return view('new-frontend.home.category',compact('category'));
     }
 
     public function product(Request $request, $slug)

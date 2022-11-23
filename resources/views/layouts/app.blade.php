@@ -116,7 +116,7 @@
 
                     </li>
                     <li class="nav-item mobile-menu-second arrow-mover">
-                        <a class="nav-link" href="#">Shop<i class="Uparrow"></i></a>
+                        <a class="nav-link" href="#">Shop <i class="Uparrow"></i></a>
                         <ul class="show-on">
                             <li>
                                 <a href="#">Collection va</a>
